@@ -1,10 +1,8 @@
 import readlineSync from 'readline-sync';
-
-const askName = () => {
+export const askName = () => {
   console.log("Welcome to the Brain Games!");
   const userName = readlineSync.question('\nMay I have your name?: ');
   console.log(`Hello, ${userName}!\n`);
   return userName;
 };
-
-export default askName;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9pbmRleC5qcyJdLCJuYW1lcyI6WyJyZWFkbGluZVN5bmMiLCJhc2tOYW1lIiwiY29uc29sZSIsImxvZyIsInVzZXJOYW1lIiwicXVlc3Rpb24iXSwibWFwcGluZ3MiOiJBQUFBLE9BQU9BLFlBQVAsTUFBeUIsZUFBekI7QUFFQSxPQUFPLE1BQU1DLE9BQU8sR0FBRyxNQUFNO0FBQ3pCQyxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSw2QkFBWjtBQUNBLFFBQU1DLFFBQVEsR0FBR0osWUFBWSxDQUFDSyxRQUFiLENBQXNCLDJCQUF0QixDQUFqQjtBQUNBSCxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBYSxVQUFTQyxRQUFTLEtBQS9CO0FBQ0EsU0FBT0EsUUFBUDtBQUNILENBTE0iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgcmVhZGxpbmVTeW5jIGZyb20gJ3JlYWRsaW5lLXN5bmMnO1xuXG5leHBvcnQgY29uc3QgYXNrTmFtZSA9ICgpID0+IHtcbiAgICBjb25zb2xlLmxvZyhcIldlbGNvbWUgdG8gdGhlIEJyYWluIEdhbWVzIVwiKTtcbiAgICBjb25zdCB1c2VyTmFtZSA9IHJlYWRsaW5lU3luYy5xdWVzdGlvbignXFxuTWF5IEkgaGF2ZSB5b3VyIG5hbWU/OiAnKTtcbiAgICBjb25zb2xlLmxvZyhgSGVsbG8sICR7dXNlck5hbWV9IVxcbmApO1xuICAgIHJldHVybiB1c2VyTmFtZTtcbn07XG5cbiJdfQ==

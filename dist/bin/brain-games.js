@@ -1,1 +1,2 @@
-import { askName } from '..';
+import askName from '..';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9iaW4vYnJhaW4tZ2FtZXMuanMiXSwibmFtZXMiOlsiYXNrTmFtZSJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsT0FBUCxNQUFvQixJQUFwQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBhc2tOYW1lIGZyb20gJy4uJzsiXX0=

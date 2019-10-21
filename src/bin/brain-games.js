@@ -1,3 +1,3 @@
-import {askName} from '../index';
+import askName from '../index';
 
 askName();

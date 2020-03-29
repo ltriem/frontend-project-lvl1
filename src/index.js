@@ -4,9 +4,9 @@ const gamesCounter = 3;
 
 const start = (description, makeQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
-  console.log(description);
   const name = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${name}!\n`);
+  console.log(description);
 
   const iter = (counter) => {
     if (counter === gamesCounter) {

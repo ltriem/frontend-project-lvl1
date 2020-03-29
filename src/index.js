@@ -10,7 +10,7 @@ const start = (description, makeQuestionAndAnswer) => {
 
   const iter = (counter) => {
     if (counter === gamesCounter) {
-      console.log(`Congratulations, ${name}`);
+      console.log(`Congratulations, ${name}!`);
       return;
     }
 

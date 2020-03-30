@@ -28,6 +28,6 @@ const start = (description, makeQuestionAndAnswer) => {
   };
 
   iter(0);
-}
+};
 
 export default start;

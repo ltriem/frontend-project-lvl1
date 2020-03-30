@@ -8,26 +8,24 @@ const lim = 100;
 
 const isPrime = (num) => {
   if (num < 2) {
-      return false;
+    return false;
   }
   const iter = (divisor) => {
     if (divisor > Math.sqrt(num)) {
-        return true;
+      return true;
     }
     if (num % divisor === 0) {
-        return false;
+      return false;
     } 
     return iter(divisor + 1);
   };
   return iter(2);
 };
-
 const makeQuestionAndAnswer = () => {
   const question = getRandomInt(firstNum, lim);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [String(question), answer];
 };
-
 const runGame = () => start(description, makeQuestionAndAnswer);
   
 export default runGame;

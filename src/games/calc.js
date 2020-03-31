@@ -1,5 +1,5 @@
 import start from '..';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];

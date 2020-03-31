@@ -1,16 +1,16 @@
 import start from '..';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (a, b) => {
   if (b > a) {
     return findGcd(b, a);
-  } 
+  }
   if (!b) {
     return a;
   }
-    return findGcd(b, a % b);
+  return findGcd(b, a % b);
 };
 const makeQuestionAndAnswer = () => {
   const num1 = getRandomInt(1, 100);

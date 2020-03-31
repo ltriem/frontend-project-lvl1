@@ -1,5 +1,5 @@
 import start from '..';
-import { getRandomInt } from '../utils';
+import getRandomInt from '../utils';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 const makeQuestionAndAnswer = () => {

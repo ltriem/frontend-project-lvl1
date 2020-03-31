@@ -15,6 +15,7 @@ const makeAnswer = (operation, num1, num2) => {
       break;
     case '*':
       answer = num1 * num2;
+      break;
     default: break;
   }
   return answer;

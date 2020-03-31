@@ -14,7 +14,7 @@ const makeQuestion = (firstNum, step, numberPosition) => {
   }
   return array.join(' ');
 };
-const makeQuestionAndAnswer = () => {
+const makeGame = () => {
   const firstNum = getRandomInt(1, 50);
   const step = getRandomInt(1, 20);
   const hiddenNumberPosition = getRandomInt(0, progressionLength - 1);
@@ -22,6 +22,6 @@ const makeQuestionAndAnswer = () => {
   const answer = firstNum + step * hiddenNumberPosition;
   return [question, String(answer)];
 };
-const runGame = () => start(description, makeQuestionAndAnswer);
+const runGame = () => start(description, makeGame);
 
 export default runGame;

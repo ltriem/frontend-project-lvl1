@@ -19,10 +19,10 @@ const isPrime = (num) => {
   };
   return iter(2);
 };
-const makeQuestionAndAnswer = () => {
+const makeGame = () => {
   const question = getRandomInt(firstNum, lim);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [String(question), answer];
 };
-const runGame = () => start(description, makeQuestionAndAnswer);
+const runGame = () => start(description, makeGame);
 export default runGame;

@@ -12,13 +12,13 @@ const findGcd = (a, b) => {
   }
   return findGcd(b, a % b);
 };
-const makeQuestionAndAnswer = () => {
+const makeGame = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
   const question = `${num1} ${num2}`;
   const answer = findGcd(num1, num2);
   return [question, String(answer)];
 };
-const runGame = () => start(description, makeQuestionAndAnswer);
+const runGame = () => start(description, makeGame);
 
 export default runGame;

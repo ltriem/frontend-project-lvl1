@@ -19,7 +19,6 @@ const makeQuestionAndAnswer = () => {
   const answer = findGcd(num1, num2);
   return [question, String(answer)];
 };
-
 const runGame = () => start(description, makeQuestionAndAnswer);
 
 export default runGame;

@@ -2,10 +2,8 @@ import start from '..';
 import { getRandomInt } from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
 const firstNum = 1;
 const lim = 100;
-
 const isPrime = (num) => {
   if (num < 2) {
     return false;

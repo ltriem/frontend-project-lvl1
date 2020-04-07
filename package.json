@@ -1,7 +1,7 @@
 {
   "name": "brain__gamesss",
   "version": "1.0.0",
-  "description": "",
+  "description": "5 basic console games",
   "main": "brain-games.js",
   "files": [
     "dist"

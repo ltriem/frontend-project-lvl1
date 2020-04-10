@@ -7,7 +7,6 @@ const start = (description, makeGame) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
   console.log(description);
-  
   const iter = (counter) => {
     if (counter === gamesCounter) {
       console.log(`Congratulations, ${name}!`);

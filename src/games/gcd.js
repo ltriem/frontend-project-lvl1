@@ -12,6 +12,7 @@ const findGcd = (a, b) => {
   }
   return findGcd(b, a % b);
 };
+
 const makeGame = () => {
   const num1 = getRandomInt(1, 100);
   const num2 = getRandomInt(1, 100);
@@ -19,6 +20,7 @@ const makeGame = () => {
   const answer = findGcd(num1, num2);
   return [question, String(answer)];
 };
+
 const runGame = () => start(description, makeGame);
 
 export default runGame;

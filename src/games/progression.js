@@ -3,6 +3,7 @@ import getRandomInt from '../utils';
 
 const description = 'What number is missing in the progression?';
 const progressionLength = 10;
+
 const makeQuestion = (firstNum, step, numberPosition) => {
   const array = [];
   for (let i = 0; i < progressionLength; i += 1) {
@@ -14,6 +15,7 @@ const makeQuestion = (firstNum, step, numberPosition) => {
   }
   return array.join(' ');
 };
+
 const makeGame = () => {
   const firstNum = getRandomInt(1, 50);
   const step = getRandomInt(1, 20);
@@ -22,6 +24,7 @@ const makeGame = () => {
   const answer = firstNum + step * hiddenNumberPosition;
   return [question, String(answer)];
 };
+
 const runGame = () => start(description, makeGame);
 
 export default runGame;

@@ -8,6 +8,7 @@ const makeGame = () => {
   const answer = isEven(question) ? 'yes' : 'no';
   return [String(question), answer];
 };
+
 const runGame = () => start(description, makeGame);
 
 export default runGame;

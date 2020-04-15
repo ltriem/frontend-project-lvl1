@@ -7,10 +7,11 @@ const progressionLength = 10;
 const makeQuestion = (firstNum, step, numberPosition) => {
   const array = [];
   for (let i = 0; i < progressionLength; i += 1) {
+    const progressionEl = firstNum + step * i;
     if (i === numberPosition) {
       array.push('..');
     } else {
-      array.push(String(firstNum + step * i));
+      array.push(String(progressionEl));
     }
   }
   return array.join(' ');

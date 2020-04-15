@@ -1,4 +1,4 @@
-import start from '..';
+import playGame from '..';
 import getRandomInt from '../utils';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -27,6 +27,6 @@ const makeGame = () => {
   return [String(question), answer];
 };
 
-const runGame = () => start(description, makeGame);
+const runGame = () => playGame(description, makeGame);
 
 export default runGame;

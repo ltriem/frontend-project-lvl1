@@ -1,4 +1,4 @@
-import start from '..';
+import playGame from '..';
 import getRandomInt from '../utils';
 
 const description = 'What number is missing in the progression?';
@@ -16,7 +16,7 @@ const makeQuestion = (firstNum, step, numberPosition) => {
   return array.join(' ');
 };
 
-const makeGame = () => {
+const getGameData = () => {
   const firstNum = getRandomInt(1, 50);
   const step = getRandomInt(1, 20);
   const hiddenNumberPosition = getRandomInt(0, progressionLength - 1);
@@ -25,6 +25,6 @@ const makeGame = () => {
   return [question, String(answer)];
 };
 
-const runGame = () => start(description, makeGame);
+const runGame = () => playGame(description, getGameData);
 
 export default runGame;

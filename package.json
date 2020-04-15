@@ -33,8 +33,6 @@
     "eslint-plugin-import": "^2.20.2"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^22.21.0",
-    "make": "^0.8.1",
     "readline-sync": "^1.4.10"
   }
 }

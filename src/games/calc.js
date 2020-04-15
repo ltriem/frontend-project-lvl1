@@ -1,4 +1,4 @@
-import start from '..';
+import playGame from '..';
 import getRandomInt from '../utils';
 
 const description = 'What is the result of the expression?';
@@ -23,7 +23,7 @@ const makeAnswer = (operation, num1, num2) => {
   return answer;
 };
 
-const makeGame = () => {
+const getGameData = () => {
   const num1 = getRandomInt(1, 20);
   const num2 = getRandomInt(1, 20);
   const operation = operations[getRandomInt(0, amountOfOperations - 1)];
@@ -32,6 +32,6 @@ const makeGame = () => {
   return [question, String(answer)];
 };
 
-const runGame = () => start(description, makeGame);
+const runGame = () => playGame(description, getGameData);
 
 export default runGame;

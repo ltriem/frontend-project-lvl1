@@ -7,23 +7,19 @@ const playGame = (description, getGameData) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(description);
-  const iter = (counter) => {
-    if (counter === roundsCount) {
-      console.log(`Congratulations, ${name}!`);
-      return;
-    }
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = getGameData();
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (answer === playerAnswer) {
       console.log('Correct!');
-      iter(counter + 1);
     } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
-      console.log(`Let's try again, ${name}!`);
+      console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
+      console.log(`Let's try again, ${name}.`);
+      return;
     }
-  };
-  iter(0);
+  }
+  console.log(`Congratulations, ${name}`);
 };
 
 export default playGame;

@@ -4,13 +4,8 @@ import getRandomInt from '../utils';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (a, b) => {
-  if (b > a) {
-    return findGcd(b, a);
-  }
-  if (!b) {
-    return a;
-  }
-  return findGcd(b, a % b);
+  if (a === b || a % b === 0) return b;
+  return findGcd(b % a, a);
 };
 
 const getGameData = () => {

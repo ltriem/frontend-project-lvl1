@@ -5,13 +5,13 @@
 
 
 <h2>Installation</h2>
-```sh
+```
 1. git clone https://github.com/ltriem/frontend-project-lvl1.git  
 2. npm install
 ```
 
 <h2>Games</h2>
-```sh
+```
 1. brain-calc - Калькулятор, нужно вычислить верный результат операции.
 2. brain-even - Проверка числа на чётность.
 3. brain-gcd - Найти наибольший общий делитель двух чисел.
@@ -20,7 +20,7 @@
 ```
 
 <h2>Launch games</h2>
-```sh
+```
 brain-calc
 brain-even
 brain-gcd
@@ -39,10 +39,10 @@ brain-progression
 
 [![asciicast](https://asciinema.org/a/317997.svg)](https://asciinema.org/a/317997)
 
-<h2>Find the greatest common divisor game:</h2>
+<h2>Find the greatest common divisor game</h2>
 
 [![asciicast](https://asciinema.org/a/318000.svg)](https://asciinema.org/a/318000)
 
-<h2>Is prime game:</h2>
+<h2>Is prime game</h2>
 
 [![asciicast](https://asciinema.org/a/318002.svg)](https://asciinema.org/a/318002)

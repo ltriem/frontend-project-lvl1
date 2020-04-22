@@ -5,16 +5,16 @@ const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
 const makeQuestion = (firstNum, step, numberPosition) => {
-  const array = [];
+  const questionData = [];
   for (let i = 0; i < progressionLength; i += 1) {
     const progressionEl = firstNum + step * i;
     if (i === numberPosition) {
-      array.push('..');
+      questionData.push('..');
     } else {
-      array.push(String(progressionEl));
+      questionData.push(String(progressionEl));
     }
   }
-  return array.join(' ');
+  return questionData.join(' ');
 };
 
 const getGameData = () => {

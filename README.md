@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/ltriem/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/ltriem/frontend-project-lvl1)
 
 <h1>Brain games</h1>
-
+Учебный проект, включающий в себя 5 игр, запускаемых из консоли. 
 
 <h2>Installation</h2>
 ```
@@ -12,23 +12,24 @@
 
 <h2>Games</h2>
 ```
-1. brain-calc - Калькулятор, нужно вычислить верный результат операции.
-2. brain-even - Проверка числа на чётность.
-3. brain-gcd - Найти наибольший общий делитель двух чисел.
-4. brain-prime - Является ли число простым?
+1. brain-calc - Калькулятор, нужно вычислить верный результат операции.  
+2. brain-even - Проверка числа на чётность.  
+3. brain-gcd - Найти наибольший общий делитель двух чисел.  
+4. brain-prime - Является ли число простым?  
 5. brain-progression - Арифметическая прогрессия, необходимо вычислить отсутствующее число в прогрессии.
-```
+
 
 <h2>Launch games</h2>
-```
-brain-calc
-brain-even
-brain-gcd
-brain-prime
-brain-progression
-```
+
++ brain-calc
++ brain-even
++ brain-gcd
++ brain-prime
++ brain-progression
+
 
 <h2>Is even game</h2>
+
 [![asciicast](https://asciinema.org/a/317998.svg)](https://asciinema.org/a/317998)
 
 <h2>Make calculations game</h2>

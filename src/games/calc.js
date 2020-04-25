@@ -17,7 +17,7 @@ const calculate = (operation, num1, num2) => {
     case '*':
       answer = num1 * num2;
       break;
-    default: return null;
+    return null;
   }
   return answer;
 };
